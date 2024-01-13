@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YoungInterest</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@900&display=swap">
+  <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/Source-Sans-Pro?styles=14484,14483,14488">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <h2 class="logo">YI</h2>
+          <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item"><a class="header__menu-link" href="index.html">Home</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="couching.html">Couching</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="#">Find mentor</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="quizzes.html">Quizzes</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="#">Blog</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="#">Community</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="#">Help</a></li>
+            </ul>
+          </nav>
+          <div class="block">
+            <div class="block__search">
+              <img src="./img/Header/search.svg" alt="">
+              <input placeholder="Search" type="text">
+            </div>
+            <button class="block__btn" id="show-modal">Log In</button>
+
+            <!-- Контейнер для модального окна -->
+            <div id="overlay">
+              <div class="block-container">
+                <div id="section">
+                  <!-- <h2>Модальное окно</h2>
+                Содержимое модального окна... -->
+                  <button id="close-btn">X</button>
+
+                  <!-- <button class="btn-close">X</button> -->
+                  <div class="form">
+                    <form class="form-section" action="#" method="get">
+                      <h2 class="form-section__title">Prihlásiť sa</h2>
+                      <div class="form-section__login">
+                        <label class="label" for="login">Login</label>
+                        <input class="form-section__login-inner" id="login" type="text" name="name" placeholder="Login"
+                          reguired />
+                      </div>
+                      <div class="form-section__password">
+                        <label class="label" for="password">Heslo</label>
+                        <input class="form-section__password-inner" id="password" type="password" name="name"
+                          placeholder="Heslo" reguired />
+                        <img class="form-section__password-icon" id="eyeicon" src="./img/Header/modal_eye.svg" alt="">
+                      </div>
+                      <p class="form-section__question">Zabudli ste heslo?</p>
+                      <button class="form-section__btn">Pokračovať</button>
+                      <div class="form-section__result">
+
+                        <div class="form-section__divider">
+                          <div class="form-section__divider-lineL"></div>
+                          <!-- <span class="container-head__divider-img"> -->
+                          <p class="form-section__divider-text">alebo</p>
+                          <!-- </div> -->
+                          <div class="form-section__divider-lineR"></div>
+                        </div>
+
+                        <!-- <div class="form-section__result-line1"></div>
+                        <p class="form-section__result-or">alebo</p>
+                        <div class="form-section__result-line2"></div> -->
+                        <div class="form-section__result-text">
+                          <p class="form-section__result-question">Nemáte účet?</p>
+                          <p class="form-section__result-next">Zaregistrujte sa</p>
+                        </div>
+                      </div>
+                    </form>
+                    <div class="overlay"></div>
+                  </div>
+
+                </div>
+              </div>
+              <!-- </div> -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="blog-container">
+        <div class="blog-container__top">
+          <img src="./img/Blog/blog_main.png" alt="">
+        </div>
+        <div class="blog-container__block">
+          <div class="blog-container__title">
+            <div class="blog-container__title-star">
+              <img src="./img/Blog/star_black.svg" alt="">
+              <img src="./img/Blog/star_black.svg" alt="">
+              <img src="./img/Blog/star_black.svg" alt="">
+              <img src="./img/Blog/star_black.svg" alt="">
+              <img src="./img/Blog/star_black.svg" alt="">
+            </div>
+            <div class="blog-container__title-list">
+              <h2 class="title">Vydajte sa na podnikateľskú cestu s odborným poradenstvom</h2>
+              <p class="blog-container__title-text">Ste začínajúci podnikateľ s víziou premeniť svoj inovatívny nápad na
+                prosperujúci podnik? Predstava úspešného startupu si <br>
+                vyžaduje viac než len vášeň a odhodlanie; vyžaduje si odborné znalosti a podporu skúsených mentorov,
+                ktorí
+                sa pohybujú v <br>
+                podnikateľskom prostredí.</p>
+              <div class="blog__buttons">
+                <button class="blog__btn-call">Find mentor</button>
+                <div class="blog__button-info">
+                  <button class="blog__btn-info">Preskúmať viac</button>
+                  <img class="blog__btn-arrow" src="./img/Blog/arrow_btn.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-article">
+            <div class="blog-articie__name">
+              <img src="./img/Blog/avat.png" alt="">
+              <h4 class="blog-articie__name-item">Nicholas Gleichner</h4>
+              <p class="blog-articie__name-text">Web developer, CEO Podnikanie & Expertise</p>
+              <p class="blog-articie__name-data">06 December 2022</p>
+            </div>
+            <div class="blog-articie__page">
+              <div class="blog-articie__page-title">
+                <div class="title page-title">Podnikanie popri štúdiu: príležitosť alebo riziko?</div>
+                <h4 class="blog-articie__page-title__subtitle">Ako si správne vybrať podnikateľský nápad a vyhnúť sa
+                  chybám.</h4>
+                <div class="blog-articie__page-title__text">
+                  <p class="blog-articie__page-title__text1">Podnikanie je pre mnohých študentov lákavá možnosť, ako si
+                    privyrobiť a získať cenné skúsenosti. Môže
+                    byť však aj náročné a vyžaduje si dôkladnú prípravu.</p>
+                  <p class="blog-articie__page-title__text2">Aké výhody podnikanie popri štúdiu prináša?</p>
+                  <ul class="blog-articie__page-title__list">
+                    <li class="blog-articie__page-title__item">- Zlepšenie finančnej situácie: Podnikanie môže byť pre
+                      študentov dobrým spôsobom, ako si
+                      privyrobiť
+                      peniaze navyše. <br>
+                      Môže sa to hodiť na pokrytie nákladov na štúdium, životné náklady alebo na realizáciu svojich
+                      snov.
+                    </li>
+                    <li class="blog-articie__page-title__item">- Získanie skúseností: Podnikanie je skvelou
+                      príležitosťou, ako získať cenné skúsenosti v oblasti
+                      podnikania, marketingu, <br>
+                      predaja či účtovníctva. Tieto skúsenosti môžu byť študentom užitočné aj po ukončení štúdia.</li>
+                    <li class="blog-articie__page-title__item">- Rozvoj podnikateľských zručností: Podnikanie môže
+                      pomôcť študentom rozvíjať svoje podnikateľské
+                      zručnosti, ako je <br>
+                      kreativita, rozhodovanie, riešenie problémov či plánovanie. Tieto zručnosti sú užitočné nielen v
+                      podnikaní, ale aj v iných <br>
+                      oblastiach života.</li>
+                  </ul>
+                  <p class="blog-articie__page-title__text3">Aké sú riziká podnikania popri štúdiu?
+                    Podnikanie môže byť náročné na čas a energiu. Študenti, ktorí sa rozhodnú podnikať popri štúdiu,
+                    musia byť ochotní obetovať svoj voľný čas a sústrediť sa na svoj podnikateľský projekt.
+                    Podnikanie je spojené s určitým rizikom. Študenti, ktorí podnikajú, sa musia pripraviť na to, že ich
+                    podnikateľský projekt nemusí byť úspešný.
+                    Zlyhanie v štúdiu: Podnikanie môže byť pre študentov príliš časovo náročné a môže im brániť v
+                    úspešnom štúdiu. Študenti, ktorí sa rozhodnú podnikať popri štúdiu, by si preto mali stanoviť
+                    priority a nájsť si spôsob, ako skĺbiť podnikanie so štúdiom.</p>
+                </div>
+              </div>
+              <div class="blog-article__page-image">
+                <img src="./img/Blog/artikle.png" alt="">
+              </div>
+              <p class="blog-article__page-text">Annie Spratt, abstract figures</p>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer__inner">
+          <h2 class="logo">YI</h2>
+          <nav class="footer__menu">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item"><a class="footer__menu-link" href="index.html">Home</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="couching.html">Couching</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="#">Find mentor</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="quizzes.html">Quizzes</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="#">Blog</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="#">Community</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="#">Help</a></li>
+            </ul>
+          </nav>
+          <div class="footer__social">
+            <div class="footer__social-item">
+              <img src="./img/Footer/Facebook.svg" alt="">
+            </div>
+            <div class="footer__social-item">
+              <img src="./img/Footer/Instagram.svg" alt="">
+            </div>
+            <div class="footer__social-item">
+              <img src="./img/Footer/LinkedIn.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="line"></div>
+        <p class="copy-text">Copyright © 2024 StartupCampus | All Rights Reserved </p>
+      </div>
+    </footer>
+  </div>
+
+  <script>const section = document.getElementById("section");
+    const overlay = document.getElementById("overlay");
+    const showBtn = document.getElementById("show-modal");
+    const closeBtn = document.getElementById("close-btn");
+
+    showBtn.addEventListener("click", function () {
+      overlay.style.display = "block"; // При клике на кнопку, показываем модальное окно
+    });
+
+    closeBtn.addEventListener("click", function () {
+      overlay.style.display = "none"; // При клике на кнопку "Закрыть", скрываем модальное окно
+    });</script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

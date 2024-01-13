@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YoungInterest</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@900&display=swap">
+  <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/Source-Sans-Pro?styles=14484,14483,14488">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <h2 class="logo">YI</h2>
+          <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item"><a class="header__menu-link" href="index.html">Home</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="couching.html">Couching</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="#">Find mentor</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="#">Quizzes</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="blog.html">Blog</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="#">Community</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="#">Help</a></li>
+            </ul>
+          </nav>
+          <div class="block">
+            <div class="block__search">
+              <img src="./img/Header/search.svg" alt="">
+              <input placeholder="Search" type="text">
+            </div>
+            <button class="block__btn">Log In</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="quiz">
+        <!-- <div class="quiz-container"> -->
+        <div class="quiz-image">
+          <img src="./img/Quizzes/quiz_top.png" alt="">
+        </div>
+        <div class="quiz-title">
+          <h2 class="title">Quizz</h2>
+          <p class="quiz-title__text">Váš výsledok v kvíze vám pomôže zistiť, ako dobre sa orientujete v oblasti
+            podnikania. Ak máte záujem o
+            podnikanie, odporúčame vám dozvedieť sa viac o jednotlivých témach, ktoré boli v kvíze spomenuté.</p>
+        </div>
+        <div class="quiz-grid">
+          <!-- <div class="quiz" id="quiz"> -->
+          <!-- <div class="quiz-question"> -->
+
+          <div class="quiz-question-item">
+            <div class="quiz-question-item__question">Otázka 1: Aké štyri výrobné faktory poznáme?</div>
+            <div class="quiz-question-item__answers">
+              <label>
+                <input class="radio" type="radio" name="q1" value="A1" checked>
+                <span class="custom-radio">A. práca, pôda, kapitál a podnikanie</span>
+              </label>
+            </div>
+            <div class="quiz-question-item__answers">
+              <label>
+                <input type="radio" name="q1" value="B1">
+                <span class="custom-radio">B. práca, potreby, vzácnosť a podnikanie</span>
+              </label>
+            </div>
+            <div class="quiz-question-item__answers">
+              <label>
+                <input type="radio" name="q1" value="C1">
+                <span class="custom-radio">C. zisky, ceny, úrok a trh</span>
+              </label>
+            </div>
+            <div class="quiz-question-item__answers">
+              <label>
+                <input type="radio" name="q1" value="D1">
+                <span class="custom-radio">D. výrobky, služby a kapitál</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="quiz-question-item">
+            <div class="quiz-question-item__question">Otázka 2: Aké sú základné fázy podnikania?</div>
+            <div class="quiz-question-item__answers">
+              <label>
+                <input type="radio" name="q2" value="A2" checked>
+                <span class="custom-radio">A. plánovanie, realizácia a kontrola</span>
+              </label>
+            </div>
+            <div class="quiz-question-item__answers">
+              <label>
+                <input type="radio" name="q2" value="B2">
+                <span class="custom-radio">B. nápady, podnikateľský plán a marketing</span>
+              </label>
+            </div>
+            <div class="quiz-question-item__answers">
+              <label>
+                <input type="radio" name="q2" value="C2">
+                <span class="custom-radio">C. podnikateľský plán, financovanie a marketing</span>
+              </label>
+            </div>
+            <div class="quiz-question-item__answers">
+              <label>
+                <input type="radio" name="q2" value="D2">
+                <span class="custom-radio">D. marketing, predaj a zákaznícky servis</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="quiz-question-item">
+            <div class="quiz-question-item__question">Otázka 3: Aké sú základné typy podnikov?</div>
+            <div class="quiz-question-item__answers">
+              <label>
+                <input type="radio" name="q3" value="A3">
+                <span class="custom-radio">A. malé, stredné a veľké podniky</span>
+              </label>
+            </div>
+            <div class="quiz-question-item__answers">
+              <label>
+                <input type="radio" name="q3" value="B3">
+                <span class="custom-radio">B. výrobné, obchodné a služby</span>
+              </label>
+            </div>
+            <div class="quiz-question-item__answers">
+              <label>
+                <input type="radio" name="q3" value="C3">
+                <span class="custom-radio">C. súkromné, verejné a družstevné podniky</span>
+              </label>
+            </div>
+            <div class="quiz-question-item__answers">
+              <label>
+                <input type="radio" name="q3" value="D3" checked>
+                <span class="custom-radio">D. všetky z vyššie uvedených</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="quiz-question-item">
+            <div class="quiz-question-item__question">Otázka 4: Aké sú základné podnikateľské riziká?</div>
+            <div class="quiz-question-item__answers">
+              <label>
+                <input type="radio" name="q4" value="A4">
+                <span class="custom-radio">A. hospodárske, politické a trhové riziká</span>
+              </label>
+            </div>
+            <div class="quiz-question-item__answers">
+              <label>
+                <input type="radio" name="q4" value="B4">
+                <span class="custom-radio">B. finančné, personálne a operačné riziká</span>
+              </label>
+            </div>
+            <div class="quiz-question-item__answers">
+              <label>
+                <input type="radio" name="q4" value="C4" checked>
+                <span class="custom-radio">C. všetky z vyššie uvedených</span>
+              </label>
+            </div>
+            <div class="quiz-question-item__answers">
+              <label>
+                <input type="radio" name="q4" value="D4">
+                <span class="custom-radio">D. žiadne z vyššie uvedených</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="quiz-question-item">
+            <div class="quiz-question-item__question">Otázka 5: Aké sú základné podnikateľské zručnosti?</div>
+            <div class="quiz-question-item__answers">
+              <label>
+                <input type="radio" name="q5" value="A5">
+                <span class="custom-radio">A. analytické, komunikačné, organizačné a manažérske <br>
+                  zručnosti</span>
+              </label>
+            </div>
+            <div class="quiz-question-item__answers">
+              <label>
+                <input type="radio" name="q5" value="B5">
+                <span class="custom-radio">B. finančné, marketingové, obchodné a technické zručnosti</span>
+              </label>
+            </div>
+            <div class="quiz-question-item__answers">
+              <label>
+                <input type="radio" name="q5" value="C5" checked>
+                <span class="custom-radio">C. všetky z vyššie uvedených</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="quiz-question-item">
+            <div class="quiz-question-item__question">Otázka 6: Aký je rozdiel medzi podnikateľom a manažérom?</div>
+            <div class="quiz-question-item__answers">
+              <label>
+                <input type="radio" name="q6" value="A6">
+                <span class="custom-radio">A. Podnikateľ je ten, kto vytvára nové podnikateľské <br>
+                  príležitosti, zatiaľ čo manažér je ten, kto tieto príležitosti <br>
+                  realizuje.</span>
+              </label>ss
+            </div>
+            <div class="quiz-question-item__answers">
+              <label>
+                <input type="radio" name="q6" value="B6">
+                <span class="custom-radio">B. Podnikateľ je zodpovedný za celkový úspech <br>
+                  podniku, zatiaľ čo manažér je zodpovedný za konkrétnu <br> oblasť podnikania.</span>
+              </label>
+            </div>
+            <div class="quiz-question-item__answers">
+              <label>
+                <input type="radio" name="q6" value="C6" checked>
+                <span class="custom-radio">C. Podnikateľ je zvyčajne kreatívnejší a inovatívnejší, <br>
+                  zatiaľ čo manažér je zvyčajne pragmatičtejší <br> a efektívnejší.</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- </div> -->
+
+
+          <!-- 
+          </div> -->
+        </div>
+
+        <button class="quiz-btn" id="submit">Uložiť odpovede</button>
+
+        <!-- </div> -->
+
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer__inner">
+          <h2 class="logo">YI</h2>
+          <nav class="footer__menu">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item"><a class="footer__menu-link" href="index.html">Home</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="couching.html">Couching</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="#">Find mentor</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="#">Quizzes</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="blog.html">Blog</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="#">Community</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="#">Help</a></li>
+            </ul>
+          </nav>
+          <div class="footer__social">
+            <div class="footer__social-item">
+              <img src="./img/Footer/Facebook.svg" alt="">
+            </div>
+            <div class="footer__social-item">
+              <img src="./img/Footer/Instagram.svg" alt="">
+            </div>
+            <div class="footer__social-item">
+              <img src="./img/Footer/LinkedIn.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="line"></div>
+        <p class="copy-text">Copyright © 2024 StartupCampus | All Rights Reserved </p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
