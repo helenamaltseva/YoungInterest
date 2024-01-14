@@ -46,13 +46,7 @@ eyeiconUpConf.onclick = function () {
   }
 }
 
-// eyeicon.addEventListener('click', () => {
-//   if (password.getAttribute('type') === 'password') {
-//     password.setAttribute('type', 'text');
-//   } else {
-//     password.setAttribute('type', 'password');
-//   }
-// })
+
 
 let showIn = function (state) {
     document.getElementById('modalFormIn').style.display = state;
@@ -64,4 +58,7 @@ let showUp = function (state) {
   document.getElementById('filterUp').style.display = state;
 }
 
-
+let showQuiz = function (state) {
+  document.getElementById('modalFormQuiz').style.display = state;
+  document.getElementById('filterQuiz').style.display = state;
+}
