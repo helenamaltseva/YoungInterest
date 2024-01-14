@@ -30,206 +30,405 @@
               <li class="header__menu-item"><a class="header__menu-link" href="#">Help</a></li>
             </ul>
           </nav>
+
           <div class="block">
-            <div class="block__search">
-              <img src="./img/Header/search.svg" alt="">
-              <input placeholder="Search" type="text">
+
+            <div class="block-signIn">
+
+              <button type="submit" class="block-btn" onclick="showIn('block')">Sign In</button>
+
+              <div id="filterIn" onclick="showIn('none')"></div>
+
+              <div id="modalFormIn">
+                <form class="form" action="#" method="get">
+                  <h2 class="form-title">Prihlásiť sa</h2>
+                  <div class="form-login">
+                    <label class="label" for="loginIn">Login</label>
+                    <input class="form-login-inner" id="loginIn" type="text" name="loginIn" placeholder="Login"
+                      reguired />
+                  </div>
+                  <div class="form-password">
+                    <label class="label" for="passwordIn">Heslo</label>
+                    <input class="form-password-inner" id="passwordIn" type="password" name="passwordIn"
+                      placeholder="Heslo" reguired />
+                    <img class="form-password-icon" id="eyeiconIn" src="./img/Header/modal_eye.svg" alt="">
+                  </div>
+                  <p class="form-question"><a href="#">Zabudli ste heslo?</a></p>
+
+                  <button class="form-btn" type="button"><a href="">Pokračovať</a></button>
+
+                  <div class="form-result">
+
+                    <div class="form-divider">
+                      <div class="form-divider-lineL"></div>
+                      <p class="form-divider-text">alebo</p>
+                      <div class="form-divider-lineR"></div>
+                    </div>
+
+                    <div class="form-result-text">
+                      <p class="form-result-question">Nemáte účet?</p>
+                      <p class="form-result-next">Zaregistrujte sa</p>
+                    </div>
+
+                  </div>
+                </form>
+
+              </div>
             </div>
-            <button class="block__btn">Log In</button>
+
+
+            <div class="block-signUp">
+              <button type="submit" class="block-btn" onclick="showUp('block')">Sign Up</button>
+
+              <div id="filterUp" onclick="showUp('none')"></div>
+
+              <div id="modalFormUp">
+                <form class="form" action="#" method="get">
+                  <h2 class="form-title">Zaregistrujte sa</h2>
+                  <div class="form-login">
+                    <label class="label" for="nameFirst">Meno</label>
+                    <input class="form-login-inner" id="nameFirst" type="text" name="nameFirst" placeholder="First Name"
+                      reguired />
+                  </div>
+                  <div class="form-login">
+                    <label class="label" for="nameSecond">Meno</label>
+                    <input class="form-login-inner" id="nameSecond" type="text" name="nameSecond"
+                      placeholder="Second Name" reguired />
+                  </div>
+                  <div class="form-login">
+                    <label class="label" for="loginUp">Login</label>
+                    <input class="form-login-inner" id="loginUp" type="text" name="loginUp" placeholder="Login"
+                      reguired />
+                  </div>
+                  <div class="form-password">
+                    <label class="label" for="passwordUp">Heslo</label>
+                    <input class="form-password-inner" id="passwordUp" type="password" name="passwordUp"
+                      placeholder="Heslo" reguired />
+                    <img class="form-password-icon" id="eyeiconUp" src="./img/Header/modal_eye.svg" alt="">
+                  </div>
+                  <div class="form-password">
+                    <label class="label" for="passwordUp">Heslo</label>
+                    <input class="form-password-inner" id="passwordUpConf" type="password" name="passwordUpConf"
+                      placeholder="Potvrďte heslo" reguired />
+                    <img class="form-password-icon" id="eyeiconUpConf" src="./img/Header/modal_eye.svg" alt="">
+                  </div>
+                  <p class="form-question"><a href="#">Zabudli ste heslo?</a></p>
+
+                  <button class="form-btn" type="button"><a href="">Pokračovať</a></button>
+
+                  <div class="form-result">
+
+                    <div class="form-divider">
+                      <div class="form-divider-lineL"></div>
+                      <p class="form-divider-text">alebo</p>
+                      <div class="form-divider-lineR"></div>
+                    </div>
+
+                    <div class="form-result-text">
+                      <p class="form-result-question">Máte účet?</p>
+                      <p class="form-result-next"> Prihlásiť sa</p>
+                    </div>
+
+                  </div>
+                </form>
+
+              </div>
+            </div>
+
           </div>
+
         </div>
       </div>
     </header>
 
     <main class="main">
-      <section class="quiz">
-        <!-- <div class="quiz-container"> -->
-        <div class="quiz-image">
-          <img src="./img/Quizzes/quiz_top.png" alt="">
-        </div>
-        <div class="quiz-title">
-          <h2 class="title">Quizz</h2>
-          <p class="quiz-title__text">Váš výsledok v kvíze vám pomôže zistiť, ako dobre sa orientujete v oblasti
-            podnikania. Ak máte záujem o
-            podnikanie, odporúčame vám dozvedieť sa viac o jednotlivých témach, ktoré boli v kvíze spomenuté.</p>
+
+      <div class="section-quiz">
+        <div class="quiz-page">
+          <h2 class="quiz-title">Zvýšte svoje vedomosti <br> pomocou pútavých kvízov</h2>
+          <p class="quiz-text">Otestujte si svoje zručnosti, rozšírte svoje obzory a uvoľnite svoj potenciál</p>
         </div>
         <div class="quiz-grid">
-          <!-- <div class="quiz" id="quiz"> -->
-          <!-- <div class="quiz-question"> -->
+          <div class="container">
+            <div class="quiz-card">
+              <div class="card-page">
+                <img class="card-image" src="./img/Home/photo1.png" alt="">
+                <h4 class="card-title">Podnikanie</h4>
+                <p class="card-text">Váš výsledok v kvíze vám pomôže <br>
+                  zistiť, ako dobre sa orientujete v <br>
+                  oblasti podnikania.</p>
 
-          <div class="quiz-question-item">
-            <div class="quiz-question-item__question">Otázka 1: Aké štyri výrobné faktory poznáme?</div>
-            <div class="quiz-question-item__answers">
-              <label>
-                <input class="radio" type="radio" name="q1" value="A1" checked>
-                <span class="custom-radio">A. práca, pôda, kapitál a podnikanie</span>
-              </label>
+                <button type="submit" class="card-btn" onclick="showIn('block')">Začnite test</button>
+                <!-- <button class="card-btn">Začnite test</button> -->
+              </div>
             </div>
-            <div class="quiz-question-item__answers">
-              <label>
-                <input type="radio" name="q1" value="B1">
-                <span class="custom-radio">B. práca, potreby, vzácnosť a podnikanie</span>
-              </label>
+            <div class="quiz-card">
+              <div class="card-page">
+                <img class="card-image" src="./img/Home/photo1.png" alt="">
+                <h4 class="card-title">Podnikanie</h4>
+                <p class="card-text">Váš výsledok v kvíze vám pomôže <br>
+                  zistiť, ako dobre sa orientujete v <br>
+                  oblasti podnikania.</p>
+                <button class="card-btn">Začnite test</button>
+              </div>
             </div>
-            <div class="quiz-question-item__answers">
-              <label>
-                <input type="radio" name="q1" value="C1">
-                <span class="custom-radio">C. zisky, ceny, úrok a trh</span>
-              </label>
+            <div class="quiz-card">
+              <div class="card-page">
+                <img class="card-image" src="./img/Home/photo1.png" alt="">
+                <h4 class="card-title">Podnikanie</h4>
+                <p class="card-text">Váš výsledok v kvíze vám pomôže <br>
+                  zistiť, ako dobre sa orientujete v <br>
+                  oblasti podnikania.</p>
+                <button class="card-btn">Začnite test</button>
+              </div>
             </div>
-            <div class="quiz-question-item__answers">
-              <label>
-                <input type="radio" name="q1" value="D1">
-                <span class="custom-radio">D. výrobky, služby a kapitál</span>
-              </label>
+            <div class="quiz-card">
+              <div class="card-page">
+                <img class="card-image" src="./img/Home/photo1.png" alt="">
+                <h4 class="card-title">Podnikanie</h4>
+                <p class="card-text">Váš výsledok v kvíze vám pomôže <br>
+                  zistiť, ako dobre sa orientujete v <br>
+                  oblasti podnikania.</p>
+                <button class="card-btn">Začnite test</button>
+              </div>
+            </div>
+            <div class="quiz-card">
+              <div class="card-page">
+                <img class="card-image" src="./img/Home/photo1.png" alt="">
+                <h4 class="card-title">Podnikanie</h4>
+                <p class="card-text">Váš výsledok v kvíze vám pomôže <br>
+                  zistiť, ako dobre sa orientujete v <br>
+                  oblasti podnikania.</p>
+                <button class="card-btn">Začnite test</button>
+              </div>
+            </div>
+            <div class="quiz-card">
+              <div class="card-page">
+                <img class="card-image" src="./img/Home/photo1.png" alt="">
+                <h4 class="card-title">Podnikanie</h4>
+                <p class="card-text">Váš výsledok v kvíze vám pomôže <br>
+                  zistiť, ako dobre sa orientujete v <br>
+                  oblasti podnikania.</p>
+                <button class="card-btn">Začnite test</button>
+              </div>
+            </div>
+            <div class="quiz-card">
+              <div class="card-page">
+                <img class="card-image" src="./img/Home/photo1.png" alt="">
+                <h4 class="card-title">Podnikanie</h4>
+                <p class="card-text">Váš výsledok v kvíze vám pomôže <br>
+                  zistiť, ako dobre sa orientujete v <br>
+                  oblasti podnikania.</p>
+                <button class="card-btn">Začnite test</button>
+              </div>
+            </div>
+            <div class="quiz-card">
+              <div class="card-page">
+                <img class="card-image" src="./img/Home/photo1.png" alt="">
+                <h4 class="card-title">Podnikanie</h4>
+                <p class="card-text">Váš výsledok v kvíze vám pomôže <br>
+                  zistiť, ako dobre sa orientujete v <br>
+                  oblasti podnikania.</p>
+                <button class="card-btn">Začnite test</button>
+              </div>
             </div>
           </div>
-
-          <div class="quiz-question-item">
-            <div class="quiz-question-item__question">Otázka 2: Aké sú základné fázy podnikania?</div>
-            <div class="quiz-question-item__answers">
-              <label>
-                <input type="radio" name="q2" value="A2" checked>
-                <span class="custom-radio">A. plánovanie, realizácia a kontrola</span>
-              </label>
-            </div>
-            <div class="quiz-question-item__answers">
-              <label>
-                <input type="radio" name="q2" value="B2">
-                <span class="custom-radio">B. nápady, podnikateľský plán a marketing</span>
-              </label>
-            </div>
-            <div class="quiz-question-item__answers">
-              <label>
-                <input type="radio" name="q2" value="C2">
-                <span class="custom-radio">C. podnikateľský plán, financovanie a marketing</span>
-              </label>
-            </div>
-            <div class="quiz-question-item__answers">
-              <label>
-                <input type="radio" name="q2" value="D2">
-                <span class="custom-radio">D. marketing, predaj a zákaznícky servis</span>
-              </label>
-            </div>
-          </div>
-
-          <div class="quiz-question-item">
-            <div class="quiz-question-item__question">Otázka 3: Aké sú základné typy podnikov?</div>
-            <div class="quiz-question-item__answers">
-              <label>
-                <input type="radio" name="q3" value="A3">
-                <span class="custom-radio">A. malé, stredné a veľké podniky</span>
-              </label>
-            </div>
-            <div class="quiz-question-item__answers">
-              <label>
-                <input type="radio" name="q3" value="B3">
-                <span class="custom-radio">B. výrobné, obchodné a služby</span>
-              </label>
-            </div>
-            <div class="quiz-question-item__answers">
-              <label>
-                <input type="radio" name="q3" value="C3">
-                <span class="custom-radio">C. súkromné, verejné a družstevné podniky</span>
-              </label>
-            </div>
-            <div class="quiz-question-item__answers">
-              <label>
-                <input type="radio" name="q3" value="D3" checked>
-                <span class="custom-radio">D. všetky z vyššie uvedených</span>
-              </label>
-            </div>
-          </div>
-
-          <div class="quiz-question-item">
-            <div class="quiz-question-item__question">Otázka 4: Aké sú základné podnikateľské riziká?</div>
-            <div class="quiz-question-item__answers">
-              <label>
-                <input type="radio" name="q4" value="A4">
-                <span class="custom-radio">A. hospodárske, politické a trhové riziká</span>
-              </label>
-            </div>
-            <div class="quiz-question-item__answers">
-              <label>
-                <input type="radio" name="q4" value="B4">
-                <span class="custom-radio">B. finančné, personálne a operačné riziká</span>
-              </label>
-            </div>
-            <div class="quiz-question-item__answers">
-              <label>
-                <input type="radio" name="q4" value="C4" checked>
-                <span class="custom-radio">C. všetky z vyššie uvedených</span>
-              </label>
-            </div>
-            <div class="quiz-question-item__answers">
-              <label>
-                <input type="radio" name="q4" value="D4">
-                <span class="custom-radio">D. žiadne z vyššie uvedených</span>
-              </label>
-            </div>
-          </div>
-
-          <div class="quiz-question-item">
-            <div class="quiz-question-item__question">Otázka 5: Aké sú základné podnikateľské zručnosti?</div>
-            <div class="quiz-question-item__answers">
-              <label>
-                <input type="radio" name="q5" value="A5">
-                <span class="custom-radio">A. analytické, komunikačné, organizačné a manažérske <br>
-                  zručnosti</span>
-              </label>
-            </div>
-            <div class="quiz-question-item__answers">
-              <label>
-                <input type="radio" name="q5" value="B5">
-                <span class="custom-radio">B. finančné, marketingové, obchodné a technické zručnosti</span>
-              </label>
-            </div>
-            <div class="quiz-question-item__answers">
-              <label>
-                <input type="radio" name="q5" value="C5" checked>
-                <span class="custom-radio">C. všetky z vyššie uvedených</span>
-              </label>
-            </div>
-          </div>
-
-          <div class="quiz-question-item">
-            <div class="quiz-question-item__question">Otázka 6: Aký je rozdiel medzi podnikateľom a manažérom?</div>
-            <div class="quiz-question-item__answers">
-              <label>
-                <input type="radio" name="q6" value="A6">
-                <span class="custom-radio">A. Podnikateľ je ten, kto vytvára nové podnikateľské <br>
-                  príležitosti, zatiaľ čo manažér je ten, kto tieto príležitosti <br>
-                  realizuje.</span>
-              </label>ss
-            </div>
-            <div class="quiz-question-item__answers">
-              <label>
-                <input type="radio" name="q6" value="B6">
-                <span class="custom-radio">B. Podnikateľ je zodpovedný za celkový úspech <br>
-                  podniku, zatiaľ čo manažér je zodpovedný za konkrétnu <br> oblasť podnikania.</span>
-              </label>
-            </div>
-            <div class="quiz-question-item__answers">
-              <label>
-                <input type="radio" name="q6" value="C6" checked>
-                <span class="custom-radio">C. Podnikateľ je zvyčajne kreatívnejší a inovatívnejší, <br>
-                  zatiaľ čo manažér je zvyčajne pragmatičtejší <br> a efektívnejší.</span>
-              </label>
-            </div>
-          </div>
-
-          <!-- </div> -->
-
-
-          <!-- 
-          </div> -->
         </div>
+      </div>
 
-        <button class="quiz-btn" id="submit">Uložiť odpovede</button>
+      <div class="section-modal">
+        <div class="modal-quiz">
 
-        <!-- </div> -->
+          <div id="filter" onclick="showIn('none')"></div>
 
-      </section>
+          <div id="modalForm">
+            <form class="form" action="#" method="get">
+
+              <div class="modal-image">
+                <img src="./img/Quizzes/quiz_top.png" alt="">
+              </div>
+              <div class="modal-title">
+                <h2 class="title">Quizz</h2>
+                <p class="modal-title__text">Váš výsledok v kvíze vám pomôže zistiť, ako dobre sa orientujete v oblasti
+                  podnikania. Ak máte záujem o
+                  podnikanie, odporúčame vám dozvedieť sa viac o jednotlivých témach, ktoré boli v kvíze spomenuté.
+                </p>
+              </div>
+              <div class="modal-grid">
+
+                <div class="modal-question-item">
+                  <div class="modal-question-item__question">Otázka 1: Aké štyri výrobné faktory poznáme?</div>
+                  <div class="modal-question-item__answers">
+                    <label>
+                      <input class="radio" type="radio" name="q1" value="A1" checked>
+                      <span class="custom-radio">A. práca, pôda, kapitál a podnikanie</span>
+                    </label>
+                  </div>
+                  <div class="modal-question-item__answers">
+                    <label>
+                      <input type="radio" name="q1" value="B1">
+                      <span class="custom-radio">B. práca, potreby, vzácnosť a podnikanie</span>
+                    </label>
+                  </div>
+                  <div class="modal-question-item__answers">
+                    <label>
+                      <input type="radio" name="q1" value="C1">
+                      <span class="custom-radio">C. zisky, ceny, úrok a trh</span>
+                    </label>
+                  </div>
+                  <div class="modal-question-item__answers">
+                    <label>
+                      <input type="radio" name="q1" value="D1">
+                      <span class="custom-radio">D. výrobky, služby a kapitál</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="modal-question-item">
+                  <div class="modal-question-item__question">Otázka 2: Aké sú základné fázy podnikania?</div>
+                  <div class="modal-question-item__answers">
+                    <label>
+                      <input type="radio" name="q2" value="A2" checked>
+                      <span class="custom-radio">A. plánovanie, realizácia a kontrola</span>
+                    </label>
+                  </div>
+                  <div class="modal-question-item__answers">
+                    <label>
+                      <input type="radio" name="q2" value="B2">
+                      <span class="custom-radio">B. nápady, podnikateľský plán a marketing</span>
+                    </label>
+                  </div>
+                  <div class="modal-question-item__answers">
+                    <label>
+                      <input type="radio" name="q2" value="C2">
+                      <span class="custom-radio">C. podnikateľský plán, financovanie a marketing</span>
+                    </label>
+                  </div>
+                  <div class="modal-question-item__answers">
+                    <label>
+                      <input type="radio" name="q2" value="D2">
+                      <span class="custom-radio">D. marketing, predaj a zákaznícky servis</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="modal-question-item">
+                  <div class="modal-question-item__question">Otázka 3: Aké sú základné typy podnikov?</div>
+                  <div class="modal-question-item__answers">
+                    <label>
+                      <input type="radio" name="q3" value="A3">
+                      <span class="custom-radio">A. malé, stredné a veľké podniky</span>
+                    </label>
+                  </div>
+                  <div class="modal-question-item__answers">
+                    <label>
+                      <input type="radio" name="q3" value="B3">
+                      <span class="custom-radio">B. výrobné, obchodné a služby</span>
+                    </label>
+                  </div>
+                  <div class="modal-question-item__answers">
+                    <label>
+                      <input type="radio" name="q3" value="C3">
+                      <span class="custom-radio">C. súkromné, verejné a družstevné podniky</span>
+                    </label>
+                  </div>
+                  <div class="modal-question-item__answers">
+                    <label>
+                      <input type="radio" name="q3" value="D3" checked>
+                      <span class="custom-radio">D. všetky z vyššie uvedených</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="modal-question-item">
+                  <div class="modal-question-item__question">Otázka 4: Aké sú základné podnikateľské riziká?</div>
+                  <div class="modal-question-item__answers">
+                    <label>
+                      <input type="radio" name="q4" value="A4">
+                      <span class="custom-radio">A. hospodárske, politické a trhové riziká</span>
+                    </label>
+                  </div>
+                  <div class="modal-question-item__answers">
+                    <label>
+                      <input type="radio" name="q4" value="B4">
+                      <span class="custom-radio">B. finančné, personálne a operačné riziká</span>
+                    </label>
+                  </div>
+                  <div class="modal-question-item__answers">
+                    <label>
+                      <input type="radio" name="q4" value="C4" checked>
+                      <span class="custom-radio">C. všetky z vyššie uvedených</span>
+                    </label>
+                  </div>
+                  <div class="modal-question-item__answers">
+                    <label>
+                      <input type="radio" name="q4" value="D4">
+                      <span class="custom-radio">D. žiadne z vyššie uvedených</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="modal-question-item">
+                  <div class="modal-question-item__question">Otázka 5: Aké sú základné podnikateľské zručnosti?</div>
+                  <div class="modal-question-item__answers">
+                    <label>
+                      <input type="radio" name="q5" value="A5">
+                      <span class="custom-radio">A. analytické, komunikačné, organizačné a manažérske <br>
+                        zručnosti</span>
+                    </label>
+                  </div>
+                  <div class="modal-question-item__answers">
+                    <label>
+                      <input type="radio" name="q5" value="B5">
+                      <span class="custom-radio">B. finančné, marketingové, obchodné a technické zručnosti</span>
+                    </label>
+                  </div>
+                  <div class="modal-question-item__answers">
+                    <label>
+                      <input type="radio" name="q5" value="C5" checked>
+                      <span class="custom-radio">C. všetky z vyššie uvedených</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="modal-question-item">
+                  <div class="modal-question-item__question">Otázka 6: Aký je rozdiel medzi podnikateľom a manažérom?
+                  </div>
+                  <div class="modal-question-item__answers">
+                    <label>
+                      <input type="radio" name="q6" value="A6">
+                      <span class="custom-radio">A. Podnikateľ je ten, kto vytvára nové podnikateľské <br>
+                        príležitosti, zatiaľ čo manažér je ten, kto tieto príležitosti <br>
+                        realizuje.</span>
+                    </label>ss
+                  </div>
+                  <div class="modal-question-item__answers">
+                    <label>
+                      <input type="radio" name="q6" value="B6">
+                      <span class="custom-radio">B. Podnikateľ je zodpovedný za celkový úspech <br>
+                        podniku, zatiaľ čo manažér je zodpovedný za konkrétnu <br> oblasť podnikania.</span>
+                    </label>
+                  </div>
+                  <div class="modal-question-item__answers">
+                    <label>
+                      <input type="radio" name="q6" value="C6" checked>
+                      <span class="custom-radio">C. Podnikateľ je zvyčajne kreatívnejší a inovatívnejší, <br>
+                        zatiaľ čo manažér je zvyčajne pragmatičtejší <br> a efektívnejší.</span>
+                    </label>
+                  </div>
+                </div>
+
+              </div>
+
+              <button class="modal-btn" id="submit">Uložiť odpovede</button>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+
+
     </main>
 
     <footer class="footer">

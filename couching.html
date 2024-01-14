@@ -30,13 +30,113 @@
               <li class="header__menu-item"><a class="header__menu-link" href="#">Help</a></li>
             </ul>
           </nav>
+
           <div class="block">
-            <div class="block__search">
-              <img src="./img/Header/search.svg" alt="">
-              <input placeholder="Search" type="text">
+
+            <div class="block-signIn">
+
+              <button type="submit" class="block-btn" onclick="showIn('block')">Sign In</button>
+
+              <div id="filterIn" onclick="showIn('none')"></div>
+
+              <div id="modalFormIn">
+                <form class="form" action="#" method="get">
+                  <h2 class="form-title">Prihlásiť sa</h2>
+                  <div class="form-login">
+                    <label class="label" for="loginIn">Login</label>
+                    <input class="form-login-inner" id="loginIn" type="text" name="loginIn" placeholder="Login"
+                      reguired />
+                  </div>
+                  <div class="form-password">
+                    <label class="label" for="passwordIn">Heslo</label>
+                    <input class="form-password-inner" id="passwordIn" type="password" name="passwordIn"
+                      placeholder="Heslo" reguired />
+                    <img class="form-password-icon" id="eyeiconIn" src="./img/Header/modal_eye.svg" alt="">
+                  </div>
+                  <p class="form-question"><a href="#">Zabudli ste heslo?</a></p>
+
+                  <button class="form-btn" type="button"><a href="">Pokračovať</a></button>
+
+                  <div class="form-result">
+
+                    <div class="form-divider">
+                      <div class="form-divider-lineL"></div>
+                      <p class="form-divider-text">alebo</p>
+                      <div class="form-divider-lineR"></div>
+                    </div>
+
+                    <div class="form-result-text">
+                      <p class="form-result-question">Nemáte účet?</p>
+                      <p class="form-result-next">Zaregistrujte sa</p>
+                    </div>
+
+                  </div>
+                </form>
+
+              </div>
             </div>
-            <button class="block__btn">Log In</button>
+
+
+            <div class="block-signUp">
+              <button type="submit" class="block-btn" onclick="showUp('block')">Sign Up</button>
+
+              <div id="filterUp" onclick="showUp('none')"></div>
+
+              <div id="modalFormUp">
+                <form class="form" action="#" method="get">
+                  <h2 class="form-title">Zaregistrujte sa</h2>
+                  <div class="form-login">
+                    <label class="label" for="nameFirst">Meno</label>
+                    <input class="form-login-inner" id="nameFirst" type="text" name="nameFirst" placeholder="First Name"
+                      reguired />
+                  </div>
+                  <div class="form-login">
+                    <label class="label" for="nameSecond">Meno</label>
+                    <input class="form-login-inner" id="nameSecond" type="text" name="nameSecond"
+                      placeholder="Second Name" reguired />
+                  </div>
+                  <div class="form-login">
+                    <label class="label" for="loginUp">Login</label>
+                    <input class="form-login-inner" id="loginUp" type="text" name="loginUp" placeholder="Login"
+                      reguired />
+                  </div>
+                  <div class="form-password">
+                    <label class="label" for="passwordUp">Heslo</label>
+                    <input class="form-password-inner" id="passwordUp" type="password" name="passwordUp"
+                      placeholder="Heslo" reguired />
+                    <img class="form-password-icon" id="eyeiconUp" src="./img/Header/modal_eye.svg" alt="">
+                  </div>
+                  <div class="form-password">
+                    <label class="label" for="passwordUp">Heslo</label>
+                    <input class="form-password-inner" id="passwordUpConf" type="password" name="passwordUpConf"
+                      placeholder="Potvrďte heslo" reguired />
+                    <img class="form-password-icon" id="eyeiconUpConf" src="./img/Header/modal_eye.svg" alt="">
+                  </div>
+                  <p class="form-question"><a href="#">Zabudli ste heslo?</a></p>
+
+                  <button class="form-btn" type="button"><a href="">Pokračovať</a></button>
+
+                  <div class="form-result">
+
+                    <div class="form-divider">
+                      <div class="form-divider-lineL"></div>
+                      <p class="form-divider-text">alebo</p>
+                      <div class="form-divider-lineR"></div>
+                    </div>
+
+                    <div class="form-result-text">
+                      <p class="form-result-question">Máte účet?</p>
+                      <p class="form-result-next"> Prihlásiť sa</p>
+                    </div>
+
+                  </div>
+                </form>
+
+              </div>
+            </div>
+
           </div>
+
         </div>
       </div>
     </header>
@@ -52,11 +152,11 @@
                 podnikania. To môže zahŕňať pomoc s marketingom a predajom, <br>
                 financovaním, právnymi a regulačnými otázkami.
               </p>
-              <div class="couch__buttons">
-                <button class="couch__btn-call">Find mentor</button>
-                <div class="couch__button-info">
-                  <button class="couch__btn-info">Preskúmať viac</button>
-                  <img src="./img/Couching/arrow_btn.svg" alt="">
+              <div class="buttons">
+                <button class="btn-call">Find mentor</button>
+                <div class="button-info">
+                  <button class="btn-info">Preskúmať viac</button>
+                  <img class="btn-arrow" src="./img/Couching/arrow_btn.svg" alt="">
                 </div>
               </div>
             </div>

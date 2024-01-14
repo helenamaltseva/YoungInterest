@@ -30,66 +30,113 @@
               <li class="header__menu-item"><a class="header__menu-link" href="#">Help</a></li>
             </ul>
           </nav>
+
           <div class="block">
-            <div class="block__search">
-              <img src="./img/Header/search.svg" alt="">
-              <input placeholder="Search" type="text">
-            </div>
-            <button class="block__btn" id="show-modal">Log In</button>
 
-            <!-- Контейнер для модального окна -->
-            <div id="overlay">
-              <div class="block-container">
-                <div id="section">
-                  <!-- <h2>Модальное окно</h2>
-                Содержимое модального окна... -->
-                  <button id="close-btn">X</button>
+            <div class="block-signIn">
 
-                  <!-- <button class="btn-close">X</button> -->
-                  <div class="form">
-                    <form class="form-section" action="#" method="get">
-                      <h2 class="form-section__title">Prihlásiť sa</h2>
-                      <div class="form-section__login">
-                        <label class="label" for="login">Login</label>
-                        <input class="form-section__login-inner" id="login" type="text" name="name" placeholder="Login"
-                          reguired />
-                      </div>
-                      <div class="form-section__password">
-                        <label class="label" for="password">Heslo</label>
-                        <input class="form-section__password-inner" id="password" type="password" name="name"
-                          placeholder="Heslo" reguired />
-                        <img class="form-section__password-icon" id="eyeicon" src="./img/Header/modal_eye.svg" alt="">
-                      </div>
-                      <p class="form-section__question">Zabudli ste heslo?</p>
-                      <button class="form-section__btn">Pokračovať</button>
-                      <div class="form-section__result">
+              <button type="submit" class="block-btn" onclick="showIn('block')">Sign In</button>
 
-                        <div class="form-section__divider">
-                          <div class="form-section__divider-lineL"></div>
-                          <!-- <span class="container-head__divider-img"> -->
-                          <p class="form-section__divider-text">alebo</p>
-                          <!-- </div> -->
-                          <div class="form-section__divider-lineR"></div>
-                        </div>
+              <div id="filterIn" onclick="showIn('none')"></div>
 
-                        <!-- <div class="form-section__result-line1"></div>
-                        <p class="form-section__result-or">alebo</p>
-                        <div class="form-section__result-line2"></div> -->
-                        <div class="form-section__result-text">
-                          <p class="form-section__result-question">Nemáte účet?</p>
-                          <p class="form-section__result-next">Zaregistrujte sa</p>
-                        </div>
-                      </div>
-                    </form>
-                    <div class="overlay"></div>
+              <div id="modalFormIn">
+                <form class="form" action="#" method="get">
+                  <h2 class="form-title">Prihlásiť sa</h2>
+                  <div class="form-login">
+                    <label class="label" for="loginIn">Login</label>
+                    <input class="form-login-inner" id="loginIn" type="text" name="loginIn" placeholder="Login"
+                      reguired />
                   </div>
+                  <div class="form-password">
+                    <label class="label" for="passwordIn">Heslo</label>
+                    <input class="form-password-inner" id="passwordIn" type="password" name="passwordIn"
+                      placeholder="Heslo" reguired />
+                    <img class="form-password-icon" id="eyeiconIn" src="./img/Header/modal_eye.svg" alt="">
+                  </div>
+                  <p class="form-question"><a href="#">Zabudli ste heslo?</a></p>
 
-                </div>
+                  <button class="form-btn" type="button"><a href="">Pokračovať</a></button>
+
+                  <div class="form-result">
+
+                    <div class="form-divider">
+                      <div class="form-divider-lineL"></div>
+                      <p class="form-divider-text">alebo</p>
+                      <div class="form-divider-lineR"></div>
+                    </div>
+
+                    <div class="form-result-text">
+                      <p class="form-result-question">Nemáte účet?</p>
+                      <p class="form-result-next">Zaregistrujte sa</p>
+                    </div>
+
+                  </div>
+                </form>
+
               </div>
-              <!-- </div> -->
-
             </div>
+
+
+            <div class="block-signUp">
+              <button type="submit" class="block-btn" onclick="showUp('block')">Sign Up</button>
+
+              <div id="filterUp" onclick="showUp('none')"></div>
+
+              <div id="modalFormUp">
+                <form class="form" action="#" method="get">
+                  <h2 class="form-title">Zaregistrujte sa</h2>
+                  <div class="form-login">
+                    <label class="label" for="nameFirst">Meno</label>
+                    <input class="form-login-inner" id="nameFirst" type="text" name="nameFirst" placeholder="First Name"
+                      reguired />
+                  </div>
+                  <div class="form-login">
+                    <label class="label" for="nameSecond">Meno</label>
+                    <input class="form-login-inner" id="nameSecond" type="text" name="nameSecond"
+                      placeholder="Second Name" reguired />
+                  </div>
+                  <div class="form-login">
+                    <label class="label" for="loginUp">Login</label>
+                    <input class="form-login-inner" id="loginUp" type="text" name="loginUp" placeholder="Login"
+                      reguired />
+                  </div>
+                  <div class="form-password">
+                    <label class="label" for="passwordUp">Heslo</label>
+                    <input class="form-password-inner" id="passwordUp" type="password" name="passwordUp"
+                      placeholder="Heslo" reguired />
+                    <img class="form-password-icon" id="eyeiconUp" src="./img/Header/modal_eye.svg" alt="">
+                  </div>
+                  <div class="form-password">
+                    <label class="label" for="passwordUp">Heslo</label>
+                    <input class="form-password-inner" id="passwordUpConf" type="password" name="passwordUpConf"
+                      placeholder="Potvrďte heslo" reguired />
+                    <img class="form-password-icon" id="eyeiconUpConf" src="./img/Header/modal_eye.svg" alt="">
+                  </div>
+                  <p class="form-question"><a href="#">Zabudli ste heslo?</a></p>
+
+                  <button class="form-btn" type="button"><a href="">Pokračovať</a></button>
+
+                  <div class="form-result">
+
+                    <div class="form-divider">
+                      <div class="form-divider-lineL"></div>
+                      <p class="form-divider-text">alebo</p>
+                      <div class="form-divider-lineR"></div>
+                    </div>
+
+                    <div class="form-result-text">
+                      <p class="form-result-question">Máte účet?</p>
+                      <p class="form-result-next"> Prihlásiť sa</p>
+                    </div>
+
+                  </div>
+                </form>
+
+              </div>
+            </div>
+
           </div>
+
         </div>
       </div>
     </header>
@@ -116,11 +163,11 @@
                 ktorí
                 sa pohybujú v <br>
                 podnikateľskom prostredí.</p>
-              <div class="blog__buttons">
-                <button class="blog__btn-call">Find mentor</button>
-                <div class="blog__button-info">
-                  <button class="blog__btn-info">Preskúmať viac</button>
-                  <img class="blog__btn-arrow" src="./img/Blog/arrow_btn.svg" alt="">
+              <div class="buttons">
+                <button class="btn-call">Find mentor</button>
+                <div class="button-info">
+                  <button class="btn-info">Preskúmať viac</button>
+                  <img class="btn-arrow" src="./img/Blog/arrow_btn.svg" alt="">
                 </div>
               </div>
             </div>
@@ -217,18 +264,6 @@
     </footer>
   </div>
 
-  <script>const section = document.getElementById("section");
-    const overlay = document.getElementById("overlay");
-    const showBtn = document.getElementById("show-modal");
-    const closeBtn = document.getElementById("close-btn");
-
-    showBtn.addEventListener("click", function () {
-      overlay.style.display = "block"; // При клике на кнопку, показываем модальное окно
-    });
-
-    closeBtn.addEventListener("click", function () {
-      overlay.style.display = "none"; // При клике на кнопку "Закрыть", скрываем модальное окно
-    });</script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
