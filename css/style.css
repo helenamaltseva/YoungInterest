@@ -95,6 +95,12 @@ body {
   background: #7893f5;
 }
 
+.block-btn .btn-up {
+  background: #FFFFFF;
+  color: #5a78f2;
+  border: 1px solid #5A78F2;
+}
+
 #filterIn, #filterUp {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.5);
@@ -518,14 +524,16 @@ body {
 }
 
 .rent {
+  max-width: 1240px;
+  margin: 11px auto 0;
   display: flex;
-  padding-bottom: 130px;
-  margin: 0 110px;
+  gap: 32px;
+  margin-bottom: 130px;
 }
 
 .rent-page {
   margin-top: 148px;
-  max-width: 594px;
+  width: 594px;
 }
 
 .rent-page__title {
@@ -594,18 +602,28 @@ body {
   background: #7893f5;
 }
 
+.container-image {
+  width: 594px;
+  height: 613px;
+  
+}
+
 .rent-image {
+  position: relative;
   max-width: 594px;
-  margin-left: 90px;
+  margin-left: 52px;
 }
 
 .rent-image__blue {
-  margin-right: -309px;
-  margin-top: 272px;
+  position: absolute;
+  margin-left: -50px;
+  margin-top: 261px;
+  z-index: -5;
 }
 
 .rent-image__photo {
-  margin-top: 11px;
+  position: absolute;
+  margin-left: -10px;
 }
 
 .footer {
