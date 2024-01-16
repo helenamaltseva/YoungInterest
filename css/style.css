@@ -95,10 +95,17 @@ body {
   background: #7893f5;
 }
 
-.block-btn .btn-up {
+.block-btn-up {
+  padding: 13px 24px;
+  gap: 8px;
   background: #FFFFFF;
   color: #5a78f2;
   border: 1px solid #5A78F2;
+  border-radius: 21px;
+}
+
+.block-btn-up:hover {
+  background: #E2E7FF;
 }
 
 #filterIn, #filterUp {
@@ -338,11 +345,13 @@ body {
 }
 
 .categories-rent {
-  background: linear-gradient(
+  background: linear-gradient(180deg, #E2E7FF 43.29%, rgba(233, 237, 253, 0.00) 100%);
+
+  /* background: linear-gradient(
     180deg,
     #d6deff 43.29%,
     rgba(233, 237, 253, 0) 100%
-  );
+  ); */
 }
 
 .categories {
@@ -364,8 +373,8 @@ body {
 }
 
 .categories-text {
-  color: #9c9c9c;
-  border-bottom: 1px solid #9c9c9c;
+  color: #6F6F6F;
+  border-bottom: 1px solid #6F6F6F;
 }
 
 .slider {
@@ -473,8 +482,7 @@ body {
 }
 
 .card__btn-info:hover {
-  background: #7893f5;
-  color: #282828;
+  background: #E2E7FF;
 }
 
 .card__btn-call {
@@ -581,8 +589,7 @@ body {
 }
 
 .rent__btn-info:hover {
-  background: #7893f5;
-  color: #282828;
+  background: #E2E7FF;
 }
 
 .rent__btn-call {
